@@ -1,0 +1,22 @@
+{
+  "name": "amind",
+  "version": "1.0.0",
+  "description": "A minimal Electron application written with Typescript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "raphael": "^2.3.0",
+    "vue": "^2.6.11",
+    "vue-electron": "^1.0.6"
+  }
+}
